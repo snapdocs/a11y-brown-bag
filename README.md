@@ -1,9 +1,8 @@
+_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run the app, run `npm install` and then `npm start`._
+
 # Accessibility Brown Bag: A look into the soul of a screenreader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-To run the app, run `npm install` and then `npm start`.
-
-_The following is a transcript from a brown bag, which you can watch [here](https://drive.google.com/file/d/1pp3opkGAhmWkwG1xruptojcqg-rOV8pC/view?usp=sharing)_
+The following is a transcript from a brown bag, which you can watch [here](https://drive.google.com/file/d/1pp3opkGAhmWkwG1xruptojcqg-rOV8pC/view?usp=sharing).
 
 ## Accessibility!
 
@@ -31,7 +30,7 @@ Some accessibility requirements improve interfaces for everyone. For example, th
 
 ![](slides/4.png)
 
-Some accessibility requirements improve interfaces for everyone. For example, think about the yellow bumps in the sidewalk. They tell you “this is a safe place to cross the street”. You could figure that out without the yellow bumps, but they make it easier. There are a lot of things like that in websites too… Here’s a real quick rundown.
+Here’s a real quick rundown of some things that make UIs better for everyone, not just people with disabilities.
 
 * Hierarchy of headings
 * Semantic flow of a page
