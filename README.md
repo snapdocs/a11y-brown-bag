@@ -75,9 +75,9 @@ This way of reverse-engineering on-screen graphics was obviously error-prone and
 
 In the late 1990s, the first Accessibility API was introduced into operating systems. The Accessibility API is a layer between applications and screen readers what contains useful information about the elements on-screen. It is a language applications use to _tell_ screen readers what’s rendered to the user.
 
-Before Accessibility APIs were introduced, screen readers had to try and decipher an application; but afterwards, the application _itself_ used the Accessibility API to convey what’s on screen in plan, consistent terms. The flow of information looks like this:
+Before Accessibility APIs were introduced, screen readers had to try and decipher an application; but afterwards, the application _itself_ used the Accessibility API to convey what’s on screen in plain and consistent terms. The flow of information looks like this:
 
-Application -> Accessibility API -> Screen reader -> You
+**Application --> Accessibility API --> Screenreader --> You**
 
 This means that in order to make your web app accessible, you just need to know how to talk to the Accessibility API!
 
@@ -151,15 +151,15 @@ This app is riddled with accessibility issues. If we think about fixing it in te
 #### Find things that aren’t labelled
 * The image needs a description via `alt="description!"`
 * The form fields need associated labels, like `<label htmlFor="name">Name</label>`
-* The name hint isn't associated with the name field. Add `aria-describedby="hint"` to the field (where "hint" is the id of the hint element).
+* The hint at the bottom of the form isn't associated with the "name" field. Add an `id` to the hint element, and add `aria-describedby="hint-id"` to the name input ("hint-id" is the id of the hint element).
 
 #### Find things where state isn't conveyed
 * When the fields are invalid, add `aria-invalid="true"`
 * When an error occurs, set focus to the error heading (via react `ref`s)
 
-See it in the code: [before]('src/components/NotAccessibleApp.js') and [after]('src/components/App.js') all of our a11y fixes!
+See it in the code: [before](src/components/NotAccessibleApp.js) and [after](src/components/App.js) all of our a11y fixes!
 
-**To see all of the improvements in action, visit the root url `/`.**
+And to see all of the improvements in real life, visit the root url (`localhost:3000`) in the app.**
 
 ## Conclusion
 
@@ -173,7 +173,7 @@ This was a very high-level overview! Here are some resources to continue learnin
 * [cypress-axe](https://github.com/avanslaars/cypress-axe#readme): Cypress integration to find a11y issues.
 * [Chrome audits](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference): Lets you run an a11y audit in your browser.
 * [WAVE accessibility extension](https://wave.webaim.org/): Browser extension with detailed audits.
-* [WCAG color contrast checker](https://webaim.org/resources/contrastchecker/): Foreground/background contrast ratios.
+* [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/): Foreground/background contrast ratios.
 * **The PC in our office!** It has IE11, Firefox, and NVDA so you can check out other screenreaders.
 
 ### Learning resources
@@ -185,12 +185,16 @@ This was a very high-level overview! Here are some resources to continue learnin
 * [Accessibility – React](https://reactjs.org/docs/accessibility.html)
 * [Getting started | UX design | Accessibility for Teams](https://accessibility.digital.gov/ux/getting-started/)
 
-Hopefully, this overview helped you see much this work helps our users with disabilities. If you’re ever stuck, just ask yourself these questions:
+Hopefully, this brown bag helped you see how much this work helps our users with disabilities. If you’re ever stuck wondering how-to-a11y, just ask yourself these questions:
 
 1. Are my elements using the appropriate role?
 2. Is everything labelled, or has a name?
 3. Are the states of my interactive elements exposed to the screenreader?
 
+**And please [visit this article](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/) to find really great code examples of this!**
+
 There are lots of different ways to write accessible code, but as long as you’re orienting around these high-level questions, you’re on the right track!
 
-**And for the record, the cat is Beep! 🐱**
+_And for the record, the cat is Beep! 🐱_
+
+![Beep](src/components/beep.jpg)
