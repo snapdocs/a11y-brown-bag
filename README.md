@@ -1,10 +1,10 @@
+The following is a transcript from a brown bag, which you can **watch** [here](https://drive.google.com/file/d/1pp3opkGAhmWkwG1xruptojcqg-rOV8pC/view?usp=sharing), and you can find the **slide deck** [here](https://docs.google.com/presentation/d/12EbesLUJrDTuelRUU5-AVz0n5TgLAqJgaOqU34dYxW8/edit?usp=sharing).
+
 _This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run the app, run `npm install` and then `npm start`._
 
+---
+
 # Accessibility Brown Bag: A look into the soul of a screenreader
-
-The following is a transcript from a brown bag, which you can watch [here](https://drive.google.com/file/d/1pp3opkGAhmWkwG1xruptojcqg-rOV8pC/view?usp=sharing).
-
-## Accessibility!
 
 ![](slides/1.png)
 
