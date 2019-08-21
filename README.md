@@ -63,7 +63,7 @@ Notice how the screenreader knows to call a link a “Link”, a button a “But
 
 ## A brief history of screenreaders
 
-![]('slides/6.png')
+![](slides/6.png)
 
 Back when screen readers were first introduced, they had to “look” at the graphics rendered on screen to try to find buttons, links, text, etc. For example, a screen reader might see a box with text inside of it and recognize it as a “button”, and it might check to see if the text is highlighted, indicating that the button is “active”.
 
@@ -71,7 +71,7 @@ This way of reverse-engineering on-screen graphics was obviously error-prone and
 
 ## A new era: The Accessibility API
 
-![]('slides/7.png')
+![](slides/7.png)
 
 In the late 1990s, the first Accessibility API was introduced into operating systems. The Accessibility API is a layer between applications and screen readers what contains useful information about the elements on-screen. It is a language applications use to _tell_ screen readers what’s rendered to the user.
 
@@ -83,7 +83,7 @@ This means that in order to make your web app accessible, you just need to know 
 
 ## Working with the Accessibility API
 
-![]('slides/8.png')
+![](slides/8.png)
 
 In a nutshell, the Accessibility API exposes information about **objects** and the **environment** they live in. For a given object, the accessibility API conveys:
 
@@ -97,29 +97,29 @@ Let’s step back for a second. This might sound really technical, but we can lo
 
 ## Look at this intersection...
 
-![]('slides/9.png')
+![](slides/9.png)
 
 #### Role
 
-![]('slides/10.png')
+![](slides/10.png)
 
 It has yellow bumpy strips so it's an intersection.
 
 #### Name
 
-![]('slides/11.png')
+![](slides/11.png)
 
 There's a speaker telling me this is "Montgomery and Sutter"
 
 #### State
 
-![]('slides/12.png')
+![](slides/12.png)
 
 When I click the button to cross, it says "WAIT" and it chirps at me so I know it's not a safe time to cross yet.
 
 ## A more familiar example: a button
 
-![]('slides/13.png')
+![](slides/13.png)
 
 ```html
 <button aria-disabled="true">
@@ -133,7 +133,7 @@ When I click the button to cross, it says "WAIT" and it chirps at me so I know i
 
 ## Let’s see it in action
 
-![]('slides/14.png')
+![](slides/14.png)
 
 Time to fire up the app!
 
@@ -167,7 +167,7 @@ This was a very high-level overview! Here are some resources to continue learnin
 
 ### Tools that make your life easier
 
-![]('slides/15.png')
+![](slides/15.png)
 
 * [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y#readme): Lint rules to catch basic a11y bugs.
 * [cypress-axe](https://github.com/avanslaars/cypress-axe#readme): Cypress integration to find a11y issues.
@@ -178,7 +178,7 @@ This was a very high-level overview! Here are some resources to continue learnin
 
 ### Learning resources
 
-![]('slides/16.png')
+![](slides/16.png)
 
 * [Accessibility APIs: A key to web accessibility](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/): Smashing Magazine
 * [Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
