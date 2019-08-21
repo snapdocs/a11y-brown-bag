@@ -157,9 +157,7 @@ This app is riddled with accessibility issues. If we think about fixing it in te
 * When the fields are invalid, add `aria-invalid="true"`
 * When an error occurs, set focus to the error heading (via react `ref`s)
 
-See it in the code: [before](src/components/NotAccessibleApp.js) and [after](src/components/App.js) all of our a11y fixes!
-
-And to see all of the improvements in real life, visit the root url (`localhost:3000`) in the app.**
+**See it in the code: [before](src/components/NotAccessibleApp.js) and [after](src/components/App.js) all of our a11y fixes!** And to see all of the improvements in real life, visit the root url (`localhost:3000`) in the app.
 
 ## Conclusion
 
